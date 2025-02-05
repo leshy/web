@@ -16,7 +16,7 @@
 indoors watering system, distributed sensor networks, data collection, nodemcu
 
 ** Drone mapping, 3D reconstruction
-[[sunsim/][./sunsim/img/bg.jpg]]
+[[sunsim_writeup/][./sunsim_writeup/img/bg.jpg]]
 
 architecture, gis, 3d modeling, sattelite data
 

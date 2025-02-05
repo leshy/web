@@ -12,7 +12,7 @@ Goal of this has been get a 3d model of the land allowing for sunlight coverage 
 
 Click below to run the project in the browser, for some reason works great on mobile
 
-[[https://lsh.red/sunsim/][./img/three_double.png]]
+[[/sunsim/][./img/three_double.png]]
 
 A bunch of geotagged photos from the air can be stitched together into a map. With higher frequency of photos 3d reconstruction of the terrain is possible. I'm working with around 100 photographs taken from 200 meters away of roughly 40.000 square meters of land.
 
