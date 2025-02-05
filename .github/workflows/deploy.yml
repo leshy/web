@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Trigger workflow in another repo
         env:
-          GH_TOKEN: ${{ secrets.PAT }}
+          GH_TOKEN: ${{ secrets.TOKEN }}
         run: |
           curl -X POST \
             -H "Authorization: token $GH_TOKEN" \
