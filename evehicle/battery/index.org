@@ -1,10 +1,10 @@
 #+OPTIONS: \n:t
 #+TITLE: Battery Design
+#+SUBTITLE: Overview
 #+LANGUAGE: en
 #+AUTHOR: Ivan Nikolic
 #+DATE: [2024-12-02 Mon]
 #+LAST_MODIFIED: [2024-12-21 Sat]
-
 #+name: header
 #+begin_src emacs-lisp :var tbl="" :exports none
 (cons (car tbl) (cons 'hline (cdr tbl)))
@@ -220,11 +220,11 @@ cell_spec = {
 }
 
 def format_time(x, _=None):
-    if x < 60:
-        return f'{x*60:.0f}s'
+    if x < 180:
+        return f'{x:.0f}s'
     elif x < (3600):
         minutes = x / 60
-        return f'{minutes:.0f}min'
+        return f'{minutes:.1f}min'
     else:
         hours = x/(3600)
         if hours < 24:
@@ -284,9 +284,9 @@ rows[4] = map(lambda x: f"{x:.2f}", rows[4])
 | I (A) | Out (kW) | T(overload) | η (%) | cell loss (W) | pack loss (W) |
 |-------+----------+-------------+-------+---------------+---------------|
 |  50.0 |      3.6 | 1.2h        |    97 |          0.55 |         10.30 |
-| 100.0 |      7.2 | 19min       |    95 |          2.19 |         41.19 |
-| 150.0 |     10.8 | 8min        |    92 |          4.92 |         92.68 |
-| 200.0 |     14.4 | 5min        |    90 |          8.75 |        164.76 |
+| 100.0 |      7.2 | 18.7min     |    95 |          2.19 |         41.19 |
+| 150.0 |     10.8 | 8.3min      |    92 |          4.92 |         92.68 |
+| 200.0 |     14.4 | 4.7min      |    90 |          8.75 |        164.76 |
 
 _calculate current per cell for each of those_
 
@@ -324,8 +324,8 @@ style = {
     'axes.zmargin': 0.05,
 
     # legend
-    'legend.fontsize': 'large',
-    'legend.title_fontsize': 'large',
+    'legend.fontsize': 'medium',
+    'legend.title_fontsize': 'medium',
     'legend.fancybox': False,
     'legend.edgecolor': colors["blue"],
     'legend.borderaxespad': 0.5,
@@ -430,19 +430,18 @@ for ir_mult in [0.8, 1.0, 1.2, 1.4]:
         label=f'{ir_value*1000:.1f}mΩ'
     )
 
-
 # Configure top plot
 ax1.set_xlabel('Pack Current (A)')
-ax1.set_ylabel('Total Heat Generation (Watts)')
-ax2.set_ylabel('Pack Efficiency (%)', color=colors["red"])
+ax1.set_ylabel('Total Heat Generation (W)')
+ax2.set_ylabel('Pack Efficiency (%) dashed lines', color=colors["red"])
 
-ax1.axvline(x=150, color=colors["red"], linestyle='--', alpha=0.75, label='Max')
-ax1.axvline(x=100, color=colors["orange"], linestyle='--', alpha=0.75, label='High')
-ax1.axvline(x=50, color=colors["green"], linestyle='--', alpha=0.75, label='Normal')
+ax1.axvline(x=150, color=colors["red"], linestyle='--', alpha=0.75, label='Max Power (13kw)')
+ax1.axvline(x=100, color=colors["orange"], linestyle='--', alpha=0.75, label='High Power (8.5kw)')
+ax1.axvline(x=50, color=colors["green"], linestyle='--', alpha=0.75, label='Normal (4kw)')
 
 # Configure bottom plot
 ax3.set_xlabel('Pack Current (A)')
-ax3.set_ylabel('Time to reach 80°C (minutes)')
+ax3.set_ylabel('Time to reach 80°C')
 ax3.set_yscale('log')  # Use log scale for time
 ax3.yaxis.set_major_formatter(FuncFormatter(format_time))
 ax3.yaxis.set_major_locator(LogLocator(base=1.1))
@@ -459,9 +458,9 @@ ax2.spines['left'].set_visible(False)
 #ax3.grid(True, which="major", ls="-")
 #ax3.grid(True, which="minor", ls=":")
 
-ax3.axvline(x=150, color=colors["red"], linestyle='--', alpha=0.75, label='Max')
-ax3.axvline(x=100, color=colors["orange"], linestyle='--', alpha=0.75, label='High')
-ax3.axvline(x=50, color=colors["green"], linestyle='--', alpha=0.75, label='Normal')
+ax3.axvline(x=150, color=colors["red"], linestyle='--', alpha=0.75, label='Max Power (13kw)')
+ax3.axvline(x=100, color=colors["orange"], linestyle='--', alpha=0.75, label='High Power (8.5kw)')
+ax3.axvline(x=50, color=colors["green"], linestyle='--', alpha=0.75, label='Normal (4kw)')
 
 
 # Set axis intervals
@@ -470,8 +469,8 @@ ax1.yaxis.set_major_locator(MultipleLocator(200))
 ax3.xaxis.set_major_locator(MultipleLocator(20))
 
 # Add legends
-# legend1 = ax1.legend(title='Cell Internal Resistance', loc='upper right')
-# legend3 = ax3.legend(title='Cell Internal Resistance', loc='upper right')
+#legend1 = ax1.legend(title='Cell Resistance', loc='upper right')
+legend3 = ax3.legend(title='Cell Internal Resistance', loc='upper right')
 # frame1 = legend1.get_frame()
 # frame3 = legend3.get_frame()
 # frame1.set_facecolor('none')

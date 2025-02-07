@@ -1,5 +1,6 @@
 #+OPTIONS: \n:t
-#+TITLE: Battery Pack 3
+#+TITLE: Battery Design
+#+SUBTITLE: Pack 3
 #+LANGUAGE: en
 #+AUTHOR: Ivan Nikolic
 #+DATE: [2025-01-25 Thu]
