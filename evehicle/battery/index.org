@@ -4,8 +4,9 @@
 #+LANGUAGE: en
 #+AUTHOR: Ivan Nikolic
 #+DATE: [2024-12-02 Mon]
-#+LAST_MODIFIED: [2024-12-21 Sat]
+#+LAST_MODIFIED: [2025-02-09 Sun]
 #+name: header
+
 #+begin_src emacs-lisp :var tbl="" :exports none
 (cons (car tbl) (cons 'hline (cdr tbl)))
 #+end_src
@@ -343,8 +344,8 @@ style = {
     'xtick.major.pad': 10,
     'ytick.major.pad': 10,
 
-    'grid.alpha': 0.5,
-    'grid.linestyle': ':',
+    'grid.alpha': 0.2,
+    'grid.linestyle': '-',
     'grid.linewidth': 1,
     'grid.color': "white",
     
@@ -928,6 +929,7 @@ Investigating different pack formats
 [[././3d/packs2.png]]
 :end:
 
+Let's build a size table
 
 #+begin_src scadclj :exports both :session batt :codefile code.clj :results output table :scadfile code.scad
 (printDims "bc" battCase "p1" pack1 "p2" pack2 "p3" pack3 "p4" pack4)
@@ -1010,18 +1012,18 @@ Investigating different pack formats
 
 
 (let [parallelCellsDim (:dims parallelCellsObj)
-      
+
       padding     (+ (:padding @busBarSpec) (:holespace @busBarSpec))
       thicc       (:thicc @busBarSpec)
       zOffset     (:zOffset @busBarSpec)
       cellHeight  (get parallelCellsDim 2)
-      
+
       xDim        (+ (get parallelCellsDim 0) padding)
       yDim        (+ (get parallelCellsDim 1) padding)
-      
+
       ; copperColor [0.9 0.55 0.3]]
       copperColor (hex-to-rgb "#ffa500")]
-  
+
       (println "// dims" xDim yDim thicc)
 
 (def busBarObj
@@ -1047,7 +1049,7 @@ Investigating different pack formats
 (def nickelStripSpacerObj
   (let [
       nickelWidth   8
-      nickelLength (- (:space @packSpec) padding)   
+      nickelLength (- (:space @packSpec) padding)
       nickelThicc   1
       nickelColor   [0.7 0.7 0.7]
         ]
@@ -1085,7 +1087,7 @@ Investigating different pack formats
         ]
     (pairObj [0 0 1] 0 joinedBusBar joinedNickelStrips)))
 )
-  
+
 (def test2S (pairObj [0 1 0] (:space @packSpec) parallelCellsObj (flipObj parallelCellsObj)))
 
 (def testBusBars2S (pairObj [0 0 1] 0.1 test2S busBarPairY))
@@ -1119,6 +1121,7 @@ Investigating different pack formats
       moveZ (+ 0.1 (/ (nth (:dims parallelCellsObj) 2) 2))
       moveY (/ (+ (nth (:dims parallelCellsObj) 1) (:space @packSpec)) 2)
       ]
+
 (def pack1SYObj
    (->Obj (:dims parallelCellsObj)
           (union (:obj parallelCellsObj) (translate [0 moveY moveZ] (:obj busBarPairY))))))
@@ -1178,8 +1181,8 @@ Investigating different pack formats
 :end:
 
 #+view: ./3d/horizBus2S.png 0,0,0,90,0,0,1000
-#+begin_src scadclj :exports both :axes t :session batt :codefile code.clj :scadfile code.scad
-(previewObj 100 testBusBars2S)
+#+begin_src scadclj :exports both :axes f :session batt :codefile code.clj :scadfile code.scad
+(previewObj 100 testBusBars1SYObj)
 #+end_src
 #+RESULTS:
 :results:
@@ -1252,10 +1255,7 @@ This is the main issue with this pack?
 
 #+view: ./3d/pack3_full.png
 #+begin_src scadclj :exports both :axes t :session batt :codefile code.clj :scadfile code.scad
-(:obj (slapObj
-       [0 0 1] 0
-       battCase
-       (rotateObj [0 0 1] pack3)))
+(:obj (slapObj [0 0 1] 0 battCase (rotateObj [0 0 1] pack3)))
 #+end_src
 
 #+RESULTS:
@@ -1398,15 +1398,9 @@ Nickel has higher resistance, I'm not confident in my temp calculations but this
 [[https://www.youtube.com/watch?v=cWQWDyBtgTs][soldering video]]
 
 
-* Exports for drawing
+* Misc
 
-#+view: ./3d/drawBatts.png 0,0,0,0,0,0,700
-#+begin_src scadclj :exports results :axes t :session batt :colorscheme Nature
-(def drawPair (pairObj [1 0 0] 20 pack1SPreview pack1SPreview))
-(:obj (pairObj [0 1 0] 20 drawPair drawPair))
-#+end_src
-
-* Resources
+** Resources
 check 
 https://www.youtube.com/watch?v=oNfTEHBz_bg&t=261s
 
@@ -1429,3 +1423,14 @@ https://ebikestuff.eu/en/20-cell-holders-21700
 can weld to alu
 https://thebatteryshop.eu/Glitter-801H-spot-welder
 
+** Exports for drawing
+just for manual sketching
+#+view: ./3d/drawBatts.png 0,0,0,0,0,0,500
+#+begin_src scadclj :exports both :axes t :session batt :colorscheme Nature
+(:obj (pairObj [0 1 0] (:space @packSpec) pack1SObj pack1SObj))
+#+end_src
+
+#+RESULTS:
+:results:
+[[././3d/drawBatts.png]]
+:end:
