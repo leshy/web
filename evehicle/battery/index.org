@@ -302,22 +302,21 @@ print(plt.rcParams.keys())
 colors = {
     "orange": "#ffa500",
     "lightblue": '#adf7f6',
-    "blue": '#469ecc',
+    "blue": '#555555',
     "red": "#fd5548",
     "green": "#73e3bb"
 }
 
 print(library['dark_background'])
 style = {
-    ,**library['dark_background'],
-    
+    ,**library['dark_background'],    
     # Frame (spines)
     'axes.spines.top': True,
     'axes.spines.right': True,
     'axes.spines.left': True,
     'axes.spines.bottom': True,
     'figure.facecolor': (0,0,0,0),
-    'axes.facecolor': '#141d22',
+    'axes.facecolor': '#111111',
     'axes.linewidth': 1.5,
     'axes.xmargin': 0.05,
     'axes.ymargin': 0.05,
@@ -344,10 +343,10 @@ style = {
     'xtick.major.pad': 10,
     'ytick.major.pad': 10,
 
-    'grid.alpha': 0.33,
+    'grid.alpha': 0.5,
     'grid.linestyle': ':',
     'grid.linewidth': 1,
-    'grid.color': colors["blue"],
+    'grid.color': "white",
     
     # Minor grid
     'axes.grid.which': 'major',  # 'major', 'minor', or 'both'
@@ -471,11 +470,6 @@ ax3.xaxis.set_major_locator(MultipleLocator(20))
 # Add legends
 #legend1 = ax1.legend(title='Cell Resistance', loc='upper right')
 legend3 = ax3.legend(title='Cell Internal Resistance', loc='upper right')
-# frame1 = legend1.get_frame()
-# frame3 = legend3.get_frame()
-# frame1.set_facecolor('none')
-# frame1.set_facecolor((0, 0, 0.01, 0.5))
-# frame3.set_facecolor((0, 0, 0.01, 0.5))
 
 plt.tight_layout()
 
@@ -609,9 +603,7 @@ ax1.yaxis.set_major_locator(MultipleLocator(5))
 legend = ax1.legend(title='Ambient Temperature', loc='upper right')
 frame = legend.get_frame()
 #frame.set_facecolor('#010101')
-
 plt.tight_layout()
-
 
 # Save and return
 plt.savefig('./graph/cable_losses.svg', dpi=150, bbox_inches='tight', format='svg', transparent=False)
@@ -1260,7 +1252,10 @@ This is the main issue with this pack?
 
 #+view: ./3d/pack3_full.png
 #+begin_src scadclj :exports both :axes t :session batt :codefile code.clj :scadfile code.scad
-(:obj (slapObj [0 0 1] 0 battCase (rotateObj [0 0 1] pack3)))
+(:obj (slapObj
+       [0 0 1] 0
+       battCase
+       (rotateObj [0 0 1] pack3)))
 #+end_src
 
 #+RESULTS:
