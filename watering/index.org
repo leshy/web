@@ -8,11 +8,13 @@
 #+VERSION: v0.1 alpha
 #+NO_TOC: t
 #+TAGS: gardening, distributed sensors, data collection, mqtt, hass, nodemcu
-* DONE [[./pots]]
+
+* Indoors Watering System
+** DONE [[./pots]]
 [[./pots][./pots/img/watering3.jpeg]]
-* TODO [[./manifold]]
+** TODO [[./manifold]]
 [[./manifold][./manifold/img/panel_photo.jpg]]
-* TODO [[./control]]
-* TODO [[./data_collection]]
+** TODO [[./control]]
+** TODO [[./data_collection]]
 [[./data_collection][./data_collection/img/grafana.png]]
 

@@ -8,14 +8,15 @@
 #+NO_TOC: t
 #+TAGS: battery, cnc, electronics, ev
 
-* [[./battery]] design
+* EV
+** [[./battery]] design
 [[./battery/][./battery/3d/pack1_full.png]]
 
-* TODO [[./luggage]] system
+** TODO [[./luggage]] system
 [[./battery/][./luggage/img/luggage.jpg]]
 
-* TODO [[./][./control]]
+** TODO [[./][./electrical]]
 
-* TODO [[./][./headlight]]
+** TODO [[./][./headlight]]
 
 
