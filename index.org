@@ -4,14 +4,13 @@
 #+LANGUAGE: en
 #+DATE: [2024-12-02 Mon]
 #+LAST_MODIFIED: [2025-02-10 Mon]
-#+VERSION: v0.1 alpha
+#+VERSION: v0.2
+#+NO_TOC: t
+
+* [[[https://github.com/leshy/][github]]] [[[./key.gpg][gpg key]]] [[[https://x.com/lesh_bla][twitter]]]
 
 * Intro
-Attempts at documenting projects
-
-_icon_home_
-
-[[https://github.com/leshy/][github]]
+Attempt at documenting projects
 
 * Projects
 
