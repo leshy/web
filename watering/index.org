@@ -7,7 +7,7 @@
 #+LAST_MODIFIED: [2025-01-06 Mon]
 #+VERSION: v0.1 alpha
 #+NO_TOC: t
-
+#+TAGS: gardening, distributed sensors, data collection, mqtt, hass, nodemcu
 * DONE [[./pots]]
 [[./pots][./pots/img/watering3.jpeg]]
 * TODO [[./manifold]]

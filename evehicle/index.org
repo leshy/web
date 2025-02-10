@@ -3,9 +3,10 @@
 #+SUBTITLE: Index
 #+LANGUAGE: en
 #+AUTHOR: Lesh
-#+CREATED: [2025-02-09 Sun]
+#+DATE: [2025-02-09 Sun]
 #+LAST_MODIFIED: [2025-02-09 Sun]
 #+NO_TOC: t
+#+TAGS: battery, cnc, electronics, ev
 
 * [[./battery]] design
 [[./battery/][./battery/3d/pack1_full.png]]
@@ -16,4 +17,5 @@
 * TODO [[./][./control]]
 
 * TODO [[./][./headlight]]
+
 
