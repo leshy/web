@@ -3,10 +3,15 @@
 #+SUBTITLE: Personal site
 #+LANGUAGE: en
 #+DATE: [2024-12-02 Mon]
-#+LAST_MODIFIED: [2025-02-09 Sun]
+#+LAST_MODIFIED: [2025-02-10 Mon]
 #+VERSION: v0.1 alpha
 
 * Intro
+Attempts at documenting projects
+
+_icon_home_
+
+[[https://github.com/leshy/][github]]
 
 * Projects
 
@@ -28,3 +33,4 @@ web, shaders, supercollider, midi
 ** evehicle
 [[./evehicle/][./evehicle/evehicle.jpg]]
 battery construction, cnc
+
