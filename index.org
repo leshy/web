@@ -1,5 +1,5 @@
 #+OPTIONS: \n:t
-#+TITLE: Ivan Nikolic
+#+TITLE: Lesh
 #+SUBTITLE: Personal site
 #+LANGUAGE: en
 #+DATE: [2024-12-02 Mon]
@@ -9,8 +9,8 @@
 
 * [[[https://github.com/leshy/][github]]] [[[./key.gpg][gpg key]]] [[[https://x.com/lesh_bla][twitter]]]
 
-* Intro
-Attempt at documenting projects
+* About
+Attempt at documenting projects, web is under construction
 
 * Projects
 
