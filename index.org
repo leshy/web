@@ -6,7 +6,7 @@
 #+NO_TOC: t
 #+TOPIMG: /visuals/img/splash.jpg
 
-* [[[https://github.com/leshy/][github]]] [[[./key.gpg][gpg key]]] [[[https://x.com/lesh_bla][twitter]]]
+* [[[https://github.com/leshy/][github]]] [[[./key.gpg][gpg key]]]
 
 * About
 Attempt at documenting projects, web is under construction
