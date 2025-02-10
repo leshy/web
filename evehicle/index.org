@@ -13,4 +13,7 @@
 * TODO [[./luggage]] system
 [[./battery/][./luggage/img/luggage.jpg]]
 
+* TODO [[./][./control]]
+
+* TODO [[./][./headlight]]
 
