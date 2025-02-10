@@ -2,7 +2,7 @@
 #+TITLE: Auto Watering
 #+SUBTITLE: Individual Plant Pot
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+DATE: [2024-12-02 Mon]
 #+LAST_MODIFIED: [2024-12-20 Fri]
 #+VERSION: v0.1 alpha

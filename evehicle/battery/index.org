@@ -2,7 +2,7 @@
 #+TITLE: Battery Design
 #+SUBTITLE: Overview
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+DATE: [2024-12-02 Mon]
 #+LAST_MODIFIED: [2025-02-09 Sun]
 #+name: header

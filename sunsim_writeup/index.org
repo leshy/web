@@ -1,7 +1,7 @@
 #+OPTIONS: \n:t
 #+TITLE: Drone mapping & Sun coverage simulation
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+DATE: [2024-12-02 Mon]
 #+LAST_MODIFIED: [2024-12-21 Sat]
 #+VERSION: v0.1 alpha

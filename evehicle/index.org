@@ -2,12 +2,15 @@
 #+TITLE: evehicle
 #+SUBTITLE: Index
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+CREATED: [2025-02-09 Sun]
 #+LAST_MODIFIED: [2025-02-09 Sun]
+#+NO_TOC: t
 
 * [[./battery]] design
 [[./battery/][./battery/3d/pack1_full.png]]
 
 * TODO [[./luggage]] system
 [[./battery/][./luggage/img/luggage.jpg]]
+
+

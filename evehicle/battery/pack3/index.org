@@ -2,12 +2,14 @@
 #+TITLE: Battery Design
 #+SUBTITLE: Pack 3 Bus Bar
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+DATE: [2025-01-25 Thu]
 #+LAST_MODIFIED: [2025-01-25 Thu]
 
 
 * Model
+Notes on pack proposal 3
+
 [[../3d/pack3.png]]
 
 * Bus Bar Design

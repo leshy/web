@@ -6,6 +6,7 @@
 #+LAST_MODIFIED: [2025-02-10 Mon]
 #+VERSION: v0.2
 #+NO_TOC: t
+#+TOPIMG: /visuals/img/splash.jpg
 
 * [[[https://github.com/leshy/][github]]] [[[./key.gpg][gpg key]]] [[[https://x.com/lesh_bla][twitter]]]
 

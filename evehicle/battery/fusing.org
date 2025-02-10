@@ -1,7 +1,7 @@
 #+OPTIONS: \n:t
 #+TITLE: Battery Fusing
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+DATE: [2024-12-24 Tue]
 #+LAST_MODIFIED: [2024-12-24 Tue]
 

@@ -2,10 +2,11 @@
 #+TITLE: Auto Watering
 #+SUBTITLE: Index
 #+LANGUAGE: en
-#+AUTHOR: Ivan Nikolic
+#+AUTHOR: Lesh
 #+DATE: [2025-01-06 Mon]
 #+LAST_MODIFIED: [2025-01-06 Mon]
 #+VERSION: v0.1 alpha
+#+NO_TOC: t
 
 * DONE [[./pots]]
 [[./pots][./pots/img/watering3.jpeg]]
