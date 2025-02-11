@@ -10,13 +10,10 @@
 * Indoors Watering System
 ** DONE [[./pots]]
 [[./pots][./pots/img/watering3.jpeg]]
-[[./pots][./pots/img/pot-outlet.png]]
 ** TODO [[./manifold]]
 [[./manifold][./manifold/img/bg.jpg]]
-[[./manifold][./manifold/img/panel.png]]
 ** TODO [[./sensor]]
 [[./manifold][./sensor/img/sensor.jpg]]
-[[./manifold][./sensor/img/sensorsketch.png]]
 ** TODO [[./control]]
 ** TODO [[./data_collection]]
 [[./data_collection][./data_collection/img/grafana.png]]
