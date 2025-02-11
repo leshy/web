@@ -1,8 +1,8 @@
 #+OPTIONS: \n:t
 #+TITLE: Lesh
 #+SUBTITLE: Personal site
-#+DATE: [2024-12-02 Mon]
-#+LAST_MODIFIED: [2025-02-10 Mon]
+#+CREATED: [2024-12-02 Mon]
+#+MODIFIED: [2025-02-10 Mon]
 #+NO_TOC: t
 #+TOPIMG: /visuals/img/splash.jpg
 
@@ -31,6 +31,3 @@ web, shaders, supercollider, midi
 ** evehicle
 [[./evehicle/][./evehicle/evehicle.jpg]]
 battery, cnc, electronics, ev
-
-
-

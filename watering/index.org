@@ -2,10 +2,8 @@
 #+TITLE: Auto Watering
 #+SUBTITLE: Index
 #+LANGUAGE: en
-#+AUTHOR: Lesh
-#+DATE: [2025-01-06 Mon]
-#+LAST_MODIFIED: [2025-01-06 Mon]
-#+VERSION: v0.1 alpha
+#+CREATED: [2025-01-06 Mon]
+#+MODIFIED: [2025-01-06 Mon]
 #+NO_TOC: t
 #+TAGS: gardening, distributed sensors, data collection, mqtt, hass, nodemcu
 
@@ -14,6 +12,8 @@
 [[./pots][./pots/img/watering3.jpeg]]
 ** TODO [[./manifold]]
 [[./manifold][./manifold/img/panel_photo.jpg]]
+** TODO [[./sensor]]
+[[./manifold][./sensor/img/sensor.jpg]]
 ** TODO [[./control]]
 ** TODO [[./data_collection]]
 [[./data_collection][./data_collection/img/grafana.png]]

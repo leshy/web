@@ -1,11 +1,9 @@
 #+OPTIONS: \n:t
 #+TITLE: Battery Design
 #+SUBTITLE: Overview
-#+LANGUAGE: en
-#+AUTHOR: Lesh
-#+DATE: [2024-12-02 Mon]
-#+LAST_MODIFIED: [2025-02-09 Sun]
-#+name: header
+#+CREATED: [2024-12-02 Mon]
+#+MODIFIED: [2025-02-09 Sun]
+#+TAGS: battery, cnc, openscad, clojure, electronics, ev
 
 #+begin_src emacs-lisp :var tbl="" :exports none
 (cons (car tbl) (cons 'hline (cdr tbl)))
@@ -616,7 +614,7 @@ plt.savefig('./graph/cable_losses.svg', dpi=150, bbox_inches='tight', format='sv
 
 Ambient temperature doesn't seem important. We'll analize the system at 60 degrees from now on, 2 meters length.
 
-#+BEGIN_SRC python :results table :exports both :session battcalc :results table :post header(*this*)
+#+BEGIN_SRC python :exports both :session battcalc :results table :post header(*this*)
 import numpy as np
 
 values = {
@@ -1353,7 +1351,7 @@ Spot welding to cell is easy
 
 We expect each of our cells to be able to output 18.75A, how will a 2cm strip of nickel perform here?
 
-#+BEGIN_SRC python :results table :exports both :session battcalc :results table
+#+BEGIN_SRC python :exports both :session battcalc :results table
 import numpy as np
 
 values = {
@@ -1434,3 +1432,4 @@ just for manual sketching
 :results:
 [[././3d/drawBatts.png]]
 :end:
+

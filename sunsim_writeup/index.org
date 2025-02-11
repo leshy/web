@@ -1,7 +1,7 @@
 #+TITLE: Drone mapping & Sun coverage simulation
 #+OPTIONS: \n:t
-#+DATE: [2024-12-02 Mon]
-#+LAST_MODIFIED: [2024-12-21 Sat]
+#+CREATED: [2024-12-02 Mon]
+#+MODIFIED: [2024-12-21 Sat]
 #+TAGS: architecture, gis, 3d, sattelite data
 
 * Intro
@@ -71,7 +71,7 @@ I'm interested in a high resolution image of the land with low resolution mounta
 
 I had to write some code to read the tiff coordinates and correctly translate those to opengl transformations so that I can import multiple tiffs and overlay them.
 
-
 [[./img/3d_broad2.png]]
+
 
 

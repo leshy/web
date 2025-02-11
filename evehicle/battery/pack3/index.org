@@ -3,8 +3,8 @@
 #+SUBTITLE: Pack 3 Bus Bar
 #+LANGUAGE: en
 #+AUTHOR: Lesh
-#+DATE: [2025-01-25 Thu]
-#+LAST_MODIFIED: [2025-01-25 Thu]
+#+CREATED: [2025-01-25 Thu]
+#+MODIFIED: [2025-01-25 Thu]
 
 
 * Model

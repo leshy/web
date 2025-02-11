@@ -3,8 +3,8 @@
 #+SUBTITLE: Index
 #+LANGUAGE: en
 #+AUTHOR: Lesh
-#+DATE: [2025-02-09 Sun]
-#+LAST_MODIFIED: [2025-02-09 Sun]
+#+CREATED: [2025-02-09 Sun]
+#+MODIFIED: [2025-02-09 Sun]
 #+NO_TOC: t
 #+TAGS: battery, cnc, electronics, ev
 

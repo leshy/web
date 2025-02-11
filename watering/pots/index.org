@@ -3,8 +3,8 @@
 #+SUBTITLE: Individual Plant Pot
 #+LANGUAGE: en
 #+AUTHOR: Lesh
-#+DATE: [2024-12-02 Mon]
-#+LAST_MODIFIED: [2024-12-20 Fri]
+#+CREATED: [2024-12-02 Mon]
+#+MODIFIED: [2024-12-20 Fri]
 #+VERSION: v0.1 alpha
 
 
