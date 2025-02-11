@@ -149,7 +149,10 @@ Captures water that might leak from the sides of the screw. Provides a connectio
 - Random Z-seam alignment
 - Supports.
 
-  
+
+** STL Files
+https://www.printables.com/model/1042108-plant-pot-outlet-tube-connection
+
 * Drainage Pressurization Module
 
 ** Description
