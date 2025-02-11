@@ -1,4 +1,4 @@
-#+TITLE: 
+#+TITLE: BATTRESEARCH
 #+CREATED: [2025-01-01 Wed]
 #+LAST_MODIFIED: [2025-01-01 Wed]
 
@@ -99,7 +99,7 @@ we need to re-do the calculations for the nickel
 #+end_example
 
 ** Loss/temp table for bus bars
-#+BEGIN_SRC python :results table :exports both :session battcalc :results table :post header(*this*)
+#+BEGIN_SRC python :exports both :session battcalc :results table :post header(*this*)
 import numpy as np
 
 values = {
